@@ -1,0 +1,24 @@
+/*
+微信获取accesstoken
+	请求地址：test测试环境：http://testinside-hj.xianjincard.com/message_push/wx-api/qnj-accesstoken
+			  正式环境：待添加
+	请求方式：post
+	请求参数：
+		'type': 'qnj_service'//微信公众类型 可为空 默认去哪借服务号；测试环境固定返回测试公众号accesstoken
+			eg. 'qnj_service'//去哪借服务号 
+				'qnj_subscribe'//去哪借订阅号
+ */
+ //错误返回
+{
+    "code": -1,
+    "message": "此微信公众号尚未添加",
+    "data": []
+}
+//正确返回
+{
+    "code": 0,
+    "message": "success",
+    "data": {
+        "access_token": "12_Sajc8fqEFlOX420l4jV4y6MtrvBd3Iw-F4jtY1gmI-WlMgDbmk8vPbxJ5Rk57KtlZ3bLB-PjLkOAQH6t1iOzRRYlcUNChsPwwBLOgpaJxsNHM12VgEeQldAHzoBmAyH07ytBQoTMPshw48PJPAKbADAXIS"
+    }
+}

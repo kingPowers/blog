@@ -1,0 +1,1 @@
+<img src="_STATIC_/public/images/emptypage.gif" style="margin: 10px 10%;">

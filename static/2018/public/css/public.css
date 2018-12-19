@@ -1,0 +1,151 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+a,a:hover{
+	text-decoration: none!important;
+}
+
+html,body {
+	background: rgb(233,233,233);
+}
+body {
+	position: relative;
+}
+.label-span {
+	float: none!important;
+	margin: 5px 5px!important;
+	display: inline-block;
+	height: 25px;
+	width: auto;
+	line-height: 25px;
+	background: #000;
+	color: #fff;
+	text-align: center;
+	opacity: 0.8;
+	padding: 0 5px;
+	border-radius: 5px;
+}
+.label-span:hover {
+	box-shadow: 0 0 20px 2px #ccc inset;
+	color: #fff;
+}
+#page-container {
+	background: transparent;
+	width: 100%;
+}
+#page-background {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.7;
+	background: rgb(233,233,233);
+}
+#page-container #page-header {
+	width: 100%;
+	height: 55px;
+	position: fixed;
+	background: #13151a;
+	box-shadow: 1px 3px 5px #39F;
+	z-index: 9999;
+	opacity: 0.9;
+	top: 0;
+}
+#page-container #page-header #page-header-container {
+	height: 100%;
+	width: 1150px;
+	margin: 0 auto;
+	color: #ddd;
+}
+#page-container #page-header #page-header-container div {
+	display: inline-block;
+	float: left;
+	height: 100%;
+	text-align: center;
+}
+#page-container #page-header #page-header-container #page-logo {
+	width: 220px;
+}
+#page-container #page-header #page-header-container #page-top-nav {
+
+}
+#page-container #page-header #page-header-container #page-top-nav ul {
+	height: 100%;
+	line-height: 100%;
+}
+#page-container #page-header #page-header-container #page-top-nav ul li{
+	list-style: none;
+	display: inline-block;
+	float: left;
+	height: 100%;
+	width: 100px;
+	line-height: 55px;
+}
+#page-container #page-header #page-header-container #page-top-nav ul li a {
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+	color: #fff;
+	text-decoration: none;
+}
+#page-container #page-header #page-header-container #page-top-nav ul .check-li a {
+	color: #00be06;
+}
+#page-container #page-header #page-header-container #page-top-nav ul li a:hover {
+	color: #00be06;
+	background: #666;
+}
+#page-top-search-div {
+	width: 230px;
+	position: relative;
+}
+#page-container #page-header #page-header-container #page-top-search-div #search-container {
+	margin: 13px 20px;
+	width: 190px;
+	height: 29px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	overflow: hidden;
+	position: relative;
+}
+#search-input {
+	height: 100%;
+	width: 150px;
+	color: #000;
+	border: 2px solid #00be06;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+#search-span {
+	position: relative;
+	display: inline-block;
+	height: 100%;
+	width: 40px;
+	background: #00be06;
+	border-left: 0;
+	color: #fff;
+	position: absolute;
+	top: 0;
+	right: 0;
+	line-height: 29px;
+	cursor: pointer;
+}
+#page-container #page-body-content {
+	width: 1150px;
+	background: transparent;
+	margin: 5px auto; 
+	margin-top: 60px;
+}
+#page-footer {
+	height: 100px;
+	width: 100%;
+	float: left;
+}
+
+
+
+
+

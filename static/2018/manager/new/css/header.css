@@ -1,0 +1,62 @@
+input[type='radio']{
+	position: relative;
+	top: -3px;
+	margin-right: 5px;
+}
+.table thead tr th{
+		background-color: #0f1934;
+}
+.table tbody tr td img {
+	max-height: 80px;
+	max-width: 200px;
+	cursor: pointer;
+}
+.page-div {
+	height: 30px;
+	width: 500px;
+	margin: 10px auto;
+	text-align: center;
+}
+.page-div .pagination {
+	height: 100%;
+	margin: 0;
+}
+.page-div .pagination li {
+	list-style: none;
+	float: left;
+	width: 30px;
+	height: 100%;
+	line-height: 30px;
+	border: 1px solid #ccc;
+	background: #fff;
+	margin-right: 5px;
+	color: #0088cc;
+}
+.page-div .pagination li.active {
+	background: #0088cc;
+	
+}
+.page-div .pagination li.active a{
+	color: #fff;
+}
+form input[type='text'].top-input {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.operate {
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	padding: 0 5px;
+	background: #5cb85c;
+	color: #fff;
+	border-radius: 5px;
+	cursor: pointer;
+	text-decoration:none;
+}
+.operate:hover{
+	text-decoration: none;
+	box-shadow: 0px 0px 20px 2px #429042 inset;
+	color: #fff;
+}

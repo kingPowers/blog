@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<!-- 	<link rel="stylesheet" type="text/css" href="./css/music.css">
+	<link rel="stylesheet" type="text/css" href="fonts/fontCss.css"> -->
+	<script type="text/javascript" src="./js/music.js"></script>
+<style>
+.text{width: 200px;height: 50px;background: red;transition: all 0.5s ease;position: relative;top: 0;left: 0;}
+.text:hover{width: 30px;height: 50px;transition: all 0.5s ease;position: relative;top: 20px;left: 95px; }
+</style>
+<script type="text/javascript">
+window.onload = function () {
+	var a = new MusicPlay("#a");
+	console.log(a);
+	console.log(a.musicDom);
+ }
+</script>
+</head>
+<body style="position: relative;">
+<div>都是</div>
+<div class="text"></div>
+<div class="a" id="a" style="height: 1px;width: 200px;margin-left: 200px;position: relative;left: 200px;"></div>
+<a href="javascript:return false" onclick="textXhr();">测试XHR</a>
+<!-- <div id="move" style="width: 200px;height: 50px;border: 1px solid black;"></div>
+<div id="add" style="width: 500px;height: 200px;border: 1px solid red;position: absolute;bottom: : 0px;right: 0;"></div> -->
+</body>
+<script type="text/javascript">
+</script>
+</html>

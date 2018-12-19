@@ -1,0 +1,114 @@
+.article-all {
+	width: 1400px;
+	margin: 70px auto;
+}
+#page-container #page-body-content {
+	width: 1450px;
+}
+.article-content {
+	float: left;
+	display: inline-block;
+	min-height: 900px;
+	width: 900px;
+	box-shadow: 0 0 20px 2px #ccc;
+	/*border: 1px solid black;*/
+	margin: 0 auto;
+	background: #fff;
+	padding: 20px 20px;
+	position: relative;
+}
+.article-content .article-content-top .article-title {
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-weight: bolder;
+}
+.article-content .article-content-top .article-des {
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+}
+.article-content .article-content-top .article-des div {
+	width: 100px;
+	height: 100%;
+	display: inline-block;
+}
+.article-content .article-content-top .article-des .article-des-time {
+	width: 300px;	
+	float: left;
+}
+.article-content .article-content-top .article-des .article-des-views {
+	width: 200px;
+	text-align: right;
+	padding-right: 20px;
+	float: right;
+}
+.article-content .article-content-body {
+	text-align: left;
+	padding-left: 50px;
+	margin-bottom: 100px;
+}
+.code-key {color:#F92672 }
+.code-annotations,.code-annotations *{color: #75715E!important;}
+.code-annotations .code-key {color:#F92672!important}
+.code-function{color: #66D9EF}
+.code-this{color: #FD9720}
+.code-function-name{color: #A6E22E}
+.code-string,.code-string *{color: #E6DB74!important}
+.code-constant-name{color: #AE81FF}
+.article-content .article-content-bottom {
+	width: 95%;
+	margin-top: 20px;
+	position: absolute;
+	bottom: 10px;
+}
+.article-content .article-content-bottom .statement {
+	text-align: center;
+	color: #aaa;
+	margin-bottom: 10px;
+}
+.article-content .article-content-bottom .next-pre {
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+}
+.article-content .article-content-bottom .next-pre .pre {
+	display: inline-block;
+	float: left;
+}
+.article-content .article-content-bottom .next-pre .next {
+	display: inline-block;
+	float: right;
+	margin-right: 10px;
+}
+.article-left,.article-right {
+	float: left;
+	display: inline-block;
+	width: 200px;
+	margin: 0 auto;
+}
+.article-right {
+	margin-left: 20px;
+}
+.article-left .author,.article-right .article-re-labels {
+	width: 180px;
+	background: #fff;
+	box-shadow: 0 0 20px 2px #ccc;
+	border-radius: 10px;
+}
+.article-left .author .author-top,.article-right .article-re-labels .article-labels-top {
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	background: #000;
+	color: #fff;
+	font-weight: bolder;
+	text-align: center;
+	margin-left: 20px;
+}
+.article-left .author .author-body,.article-right .article-re-labels .article-labels-body {
+	padding-left: 10px;
+	line-height: 30px;
+}
+
