@@ -22,4 +22,5 @@ json_encode( mixed $value [,int $options = 0 [,int $depth = 512]] )
  * 7	JSON_ERROR_INF_OR_NAN	
  * 8	JSON_ERROR_UNSUPPORTED_TYPE		
  */
+ss
 function json_last_error()
