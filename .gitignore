@@ -2,6 +2,8 @@
 /yii
 /yii_test
 /yii_test.bat
+backend/runtime/
+backend/web/assets/
 
 # phpstorm project files
 .idea
