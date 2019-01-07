@@ -1,6 +1,6 @@
 <?php 
 use backend\models\Label;
-$viewParams = $this->params; ?>
+?>
 <form id='labelForm' class="definewidth m20" >
 <input type="hidden" name="_csrf-backend" value="<?= Yii::$app->request->csrfToken?>">
 <input type="hidden" name="is_sub" value="1">
@@ -18,8 +18,8 @@ $viewParams = $this->params; ?>
       <td>
         <select name="pid">
           <option value="0">一级标签</option>
-          <?php foreach ($viewParams['p_label'] as $key => $value) { ?>
-            <option value="<?= $value['id'] ?>" <?php if ($viewParams['labelInfo']['pid'] == $key) echo 'selected=""'; ?>><?= $value ?></option>
+          <?php foreach ($p_label as $key => $value) { ?>
+            <option value="<?= $key ?>" <?php if ($model->pid == $key) echo 'selected=""'; ?>><?= $value ?></option>
          <?php } ?>
         </select>
       </td> 

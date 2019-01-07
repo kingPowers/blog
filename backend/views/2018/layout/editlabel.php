@@ -1,6 +1,8 @@
 <?php 
 use backend\models\Label;
-$viewParams = $this->params; ?>
+use yii\widgets\ActiveForm;
+use yii\helpers\Html;
+?>
 <form id='labelForm' class="definewidth m20" >
 <input type="hidden" name="_csrf-backend" value="<?= Yii::$app->request->csrfToken?>">
 <input type="hidden" name="is_sub" value="1">
@@ -8,7 +10,9 @@ $viewParams = $this->params; ?>
   <table class="table table-bordered table-hover m10">
     <tr>
       <td class="tableleft">标签名</td>
-      <td><input type="text" name="name" value="<?= $viewParams['labelInfo']['name'] ?>"/></td>
+      <td>
+          <input type="text" name="name" value="<?= $viewParams['labelInfo']['name'] ?>"/>
+      </td>
     </tr>
     <tr>
       <td class="tableleft">标签介绍</td>
