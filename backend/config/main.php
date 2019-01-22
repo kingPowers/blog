@@ -11,6 +11,7 @@ return [
     'basePath' => BACK_PATH,
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
+    'language' => 'zh-CN',
     "viewPath" => VIEW_PATH,
     'modules' => [
         'redactor'  =>  [
@@ -74,8 +75,18 @@ return [
             'hostname' => '39.104.49.15',
             'port' => 6379,
             'database' => 0
-        ]
-        
+        ],
+        'i18n'=>[
+            'translations'=>[
+                '*'=>[
+                    'class'=>'yii\i18n\PhpMessageSource',
+                    'fileMap'=>[
+                        'common'=>'common.php',
+                    ],
+                ]
+
+            ],
+        ],
     ],
     'defaultRoute'  =>  "index",
     'params' => $params,

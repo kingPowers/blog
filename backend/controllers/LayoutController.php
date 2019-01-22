@@ -10,6 +10,7 @@ use backend\models\Navigate;
 use backend\models\Title;
 use backend\models\BackFilter;
 use yii\data\Pagination;
+use yii\helpers\Url;
 
 /**
  * 前台页面布局管理
@@ -126,17 +127,30 @@ class LayoutController extends CommonController
 
     public function actionEditlabel()
     {
-        if ($this->request->post("is_sub") == 1) return $this->editlabel($this->request->post());
-        $labelid = $this->request->get("labelid");
+        $labelid = $this->request->get("labelid") ?: $this->request->post('id');
         $labelModel = new Label();
+        $labelModel->setScenario(Label::SCENARIO_ADD);
+        $post = $this->request->post();
 
         if ($labelid) {
             $model = Label::findOne($labelid);
-            $model && $labelModel = $model->getAttributes();
+            $model->setScenario(Label::SCENARIO_EDIT);
+            $model && $labelModel = $model;
+        }
+
+        if ($post && $labelModel->load($post) && $labelModel->validate()) {
+            $labelModel->setLevel();
+            if (false == $labelModel->save(false)) {
+                return $this->redirectMessage('操作成功', Url::to(['layout/label']));
+            }
+
+            return $this->redirectMessage('操作失败', Url::to(['layout/label']));
         }
 
         return $this->render('edit-label', [
-            'p_label' => Label::selectTree(),
+            'p_label' => array_merge(['0' => '一级标签'], Label::selectTree()),
+            'status' => Label::$status,
+            'hotStatus' => Label::getHotStatus(),
             'model' => $labelModel
         ]);
     }

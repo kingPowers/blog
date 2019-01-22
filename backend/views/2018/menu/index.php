@@ -1,4 +1,3 @@
-<?php $viewParams = $this->params; ?>
 <div style="margin: 10px 20px;">
 <a type="button" class="btn btn-success" href="/menu/edit">新增菜单</a>
     <a type="button" class="btn btn-sort">保存排序</a>
@@ -7,7 +6,7 @@
     <thead>
         <tr>
 
-          <?php foreach ($viewParams['title'] as $value) { ?>
+          <?php foreach ($title as $value) { ?>
 
             <th><?= $value ?></th>
 
@@ -17,10 +16,10 @@
     </thead>
     <tbody>
       <?php
-        foreach ($viewParams['list'] as $list) {
+        foreach ($list as $item) {
           echo "<tr>";
-          foreach ($viewParams['title'] as $tk => $tv) {
-            echo "<td>".$list[$tk]."</td>";
+          foreach ($title as $tk => $tv) {
+            echo "<td>".$item[$tk]."</td>";
           }
           echo "</tr>";
         }

@@ -19,14 +19,14 @@ class Common
 	protected $_client;
 	protected $_token;
 	public $requestData;
-	private $rootNamespace = "\@service";
+	private $rootNamespace = "\@services";
 	private $model;
 	private $method;
 	public function apiRun ()
 	{
 		$this->_init();
 		$versionDir = "version" . trim(str_replace(".","",$this->_version),'0\0');
-		$className = "service\models\\{$versionDir}\\{$this->model}";
+		$className = "services\models\\{$versionDir}\\{$this->model}";
 
 		if (!class_exists($className))
 			throw new \Exception("本版本接口尚未定义此操作",self::CONFIG_ERROR);

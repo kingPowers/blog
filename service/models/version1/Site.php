@@ -6,7 +6,7 @@ namespace service\models\version1;
 */
 class Site extends Base
 {
-	const RKEY_PRE = 'service:site';
+	const RKEY_PRE = 'services:site';
 	const REDIS_LIFE = 6;
 	public $whereFilter = [
 		'status' => ['=','status',"_value_"],

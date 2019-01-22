@@ -81,6 +81,23 @@ class Label extends Common
 		}
 		return parent::checkMyValidate($data,$scenario);
 	}
+
+    public function setLevel()
+    {
+        if ($this->pid) {
+            return $this->level = 0;
+        }
+
+        $pLabel = self::getInfoById($this->pid);
+        if (!$pLabel) {
+            return $this->level = 0;
+        }
+
+        $this->level = $pLabel['level'] . $this->pid . '-';
+        if (substr($this->level, 0, 1) != '-') {
+            $this->level = '-' . $this->level;
+        }
+    }
 	/**
 	 * 获取分类号的标签
 	 * @Author   Quanjiaxin

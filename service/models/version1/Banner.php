@@ -8,7 +8,7 @@ class Banner extends Base
 {
 	const ENABLE_STATUS = 1;const ENABLE_NAME = '启用';
 	const FORBID_STATUS = 2;const FORBID_NAME = '禁用';
-	const RKEY_PRE = 'service:banner';
+	const RKEY_PRE = 'services:banner';
 	const REDIS_LIFE = 60;
 	public $whereFilter = [
 		'status' => ['=','status',"_value_"],

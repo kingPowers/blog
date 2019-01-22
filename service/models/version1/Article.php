@@ -6,7 +6,7 @@ namespace service\models\version1;
 */
 class Article extends Base
 {
-	const RKEY_PRE = 'service:article';
+	const RKEY_PRE = 'services:article';
 	const REDIS_LIFE = 6;
 	const TOP_STATUS = 2;const UNTOP_STATUS = 1;
 	const NEW_STATUS = 2;const UNNEW_STATUS = 2;

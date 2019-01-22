@@ -6,7 +6,7 @@ namespace service\models\version1;
 */
 class Navigate extends Base
 {
-	const RKEY_PRE = 'service:navigate';
+	const RKEY_PRE = 'services:navigate';
 	const REDIS_LIFE = 300;
 	public $whereFilter = [
 		'status' => ['=','status',"_value_"],

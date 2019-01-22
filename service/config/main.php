@@ -6,10 +6,10 @@ $params = array_merge(
     require SERVICE_PATH . 'config/params-local.php'
 );
 return [
-    'id' => 'app-service',
+    'id' => 'app-services',
     'basePath' => SERVICE_PATH,
     'bootstrap' => ['log'],
-    'controllerNamespace' => 'service\controllers',
+    'controllerNamespace' => 'services\controllers',
     "viewPath" => VIEW_PATH,
     'components' => [
         'request' => [
@@ -23,7 +23,7 @@ return [
         ],
         'session' => [
             // this is the name of the session cookie used for login on the frontend
-            'name' => 'advanced-service',
+            'name' => 'advanced-services',
         ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,

@@ -5,3 +5,4 @@ Yii::setAlias('@backend', dirname(dirname(__DIR__)) . '/backend');
 Yii::setAlias('@console', dirname(dirname(__DIR__)) . '/console');
 Yii::setAlias("@service",SERVICE_PATH);
 Yii::setAlias("@vendor",dirname(dirname(__DIR__)) . '/vendor');
+Yii::setAlias("@fast",dirname(dirname(__DIR__)) . '/backend/components/fast');

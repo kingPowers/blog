@@ -9,7 +9,7 @@ defined("FRONT_PATH") or define("FRONT_PATH",ROOT_PATH . "frontend" . DS);
 //后台模块路径
 defined("BACK_PATH") or define("BACK_PATH",ROOT_PATH . "backend" . DS);
 //接口模块路径
-defined("SERVICE_PATH") or define("SERVICE_PATH",ROOT_PATH . "service" . DS);
+defined("SERVICE_PATH") or define("SERVICE_PATH",ROOT_PATH . "services" . DS);
 //上传文件根目录
 defined("UPLOAD_PATH") or define("UPLOAD_PATH",ROOT_PATH . 'static' . DS . "upload" .DS);
 
@@ -32,7 +32,7 @@ defined("_STATIC_") or define("_STATIC_","http://static.blog.com/" . THEME);
 //上传文件地址
 defined("_UPLOAD_") or define("_UPLOAD_","http://static.blog.com/upload");
 //接口网址
-defined("_SERVICE_") or define("_SERVICE_","http://service.blog.com");
+defined("_SERVICE_") or define("_SERVICE_","http://services.blog.com");
 //前台网址
 defined("_FRONT_") or define("_FRONT_","http://www.blog.com");
 //后台地址

@@ -8,7 +8,7 @@ class Label extends Base
 {
 	const HOT_STATUS = 2;const HOT_STATUS_NAME = "热门";
 	const UNHOT_STATUS = 1;const UNHOT_STATUS_NAME = "非热门";
-	const RKEY_PRE = 'service::label';
+	const RKEY_PRE = 'services::label';
 	public $whereFilter = [
 		'status' => ['=',"status","_value_"],
 		'is_hot' => ['=','is_hot',"_value_"],
